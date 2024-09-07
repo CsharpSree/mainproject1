@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <title>Travisa - Visa & Immigration Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>Migration Connect</a>
+                    <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>9837638368</a>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="#"><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href="#"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="#" class="text-muted me-2">Help</a><small> / </small>
+                    <a href="#" class="text-muted mx-2">Support</a><small> / </small>
+                    <a href="#" class="text-muted ms-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="#" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="{% static 'img/brand-logo.png' %}" class="img-fluid" alt="">Migration Connect</h1>
+                 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
+                        <div class="dropdown-menu m-0">
+                            <a href="feature.html" class="dropdown-item">Feature</a>
+                            <a href="countries.html" class="dropdown-item">Countries</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a> 
+                            <a href="training.html" class="dropdown-item">Training</a>
+                             <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a> -->
+                <!-- <a href="login.html" class="btn btn-outline-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0 ms-2">Login</a>
+                <a href="signup.html" class="btn btn-outline-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0 ms-2">Signup</a> -->
+                <a href="login.html" class="btn btn-outline-primary btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0 ms-2">Login</a>
+                <a href="signup.html" class="btn btn-outline-primary btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0 ms-2">Signup</a>
+                
+    
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+   
+    <!-- Main Content Start -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="text-center">Upload Your Profile</h1>
+        </div>
+    </header>
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .scrollable {
+            max-height: 200px; /* Reduced height */
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: calc(100% - 16px); /* Adjust width to account for padding */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #003a66;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00294d;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form>
+
+            <!-- Personal Information -->
+            <div class="form-section personal-info">
+                <h2>Personal Information</h2>
+                <div class="scrollable">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="currentLocation">Current Location:</label>
+                    <input type="text" id="currentLocation" name="currentLocation" required>
+
+                    <label for="preferredLocation">Preferred Location (if applicable):</label>
+                    <input type="text" id="preferredLocation" name="preferredLocation">
+                </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="form-section professional-summary">
+                <h2>Professional Summary</h2>
+                <div class="scrollable">
+                    <label for="summary">Brief Overview of Skills and Experience:</label>
+                    <textarea id="summary" name="summary" rows="4" required></textarea>
+
+                    <label for="careerGoals">Career Goals:</label>
+                    <textarea id="careerGoals" name="careerGoals" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="form-section education">
+                <h2>Education</h2>
+                <div class="scrollable">
+                    <h3>High School</h3>
+                    <label for="highSchool">High School:</label>
+                    <input type="text" id="highSchool" name="highSchool" placeholder="e.g., XYZ High School" required>
+
+                    <label for="highSchoolLocation">Location:</label>
+                    <input type="text" id="highSchoolLocation" name="highSchoolLocation" placeholder="e.g., City, State">
+
+                    <label for="highSchoolGraduationDate">Graduation Date:</label>
+                    <input type="date" id="highSchoolGraduationDate" name="highSchoolGraduationDate" required>
+
+                    <h3>Undergraduate</h3>
+                    <label for="degree1">Degree 1:</label>
+                    <input type="text" id="degree1" name="degree1" placeholder="e.g., Bachelor of Science" required>
+
+                    <label for="institution1">Institution 1:</label>
+                    <input type="text" id="institution1" name="institution1" placeholder="e.g., XYZ University" required>
+
+                    <label for="graduationDate1">Graduation Date 1:</label>
+                    <input type="date" id="graduationDate1" name="graduationDate1" required>
+
+                    <label for="degree2">Degree 2 (if applicable):</label>
+                    <input type="text" id="degree2" name="degree2" placeholder="e.g., Master of Science">
+
+                    <label for="institution2">Institution 2:</label>
+                    <input type="text" id="institution2" name="institution2" placeholder="e.g., ABC University">
+
+                    <label for="graduationDate2">Graduation Date 2:</label>
+                    <input type="date" id="graduationDate2" name="graduationDate2">
+
+                    <h3>Postgraduate</h3>
+                    <label for="degree3">Degree 3 (if applicable):</label>
+                    <input type="text" id="degree3" name="degree3" placeholder="e.g., PhD in Computer Science">
+
+                    <label for="institution3">Institution 3:</label>
+                    <input type="text" id="institution3" name="institution3" placeholder="e.g., DEF University">
+
+                    <label for="graduationDate3">Graduation Date 3:</label>
+                    <input type="date" id="graduationDate3" name="graduationDate3">
+
+                    <h3>Relevant Coursework or Specializations:</h3>
+                    <textarea id="coursework" name="coursework" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="form-section work-experience">
+                <h2>Work Experience</h2>
+                <div class="scrollable">
+                    <label for="workExperience">Job Titles, Companies, Responsibilities, Achievements, Dates:</label>
+                    <textarea id="workExperience" name="workExperience" rows="6" required></textarea>
+                </div>
+            </div>
+
+            <!-- Certifications and Skills -->
+            <div class="form-section certifications-skills">
+                <h2>Certifications and Skills</h2>
+                <div class="scrollable">
+                    <label for="certifications">Relevant Certifications:</label>
+                    <textarea id="certifications" name="certifications" rows="4"></textarea>
+
+                    <label for="skills">Technical Skills:</label>
+                    <textarea id="skills" name="skills" rows="4"></textarea>
+
+                    <label for="languageSkills">Language Proficiency:</label>
+                    <textarea id="languageSkills" name="languageSkills" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Projects and Achievements -->
+            <div class="form-section projects-achievements">
+                <h2>Projects and Achievements</h2>
+                <div class="scrollable">
+                    <label for="projects">Key Projects:</label>
+                    <textarea id="projects" name="projects" rows="4"></textarea>
+
+                    <label for="roles">Roles and Technologies Used:</label>
+                    <textarea id="roles" name="roles" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- References -->
+            <div class="form-section references">
+                <h2>References</h2>
+                <div class="scrollable">
+                    <label for="references">Contact Details for Professional References:</label>
+                    <textarea id="references" name="references" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Visa and Relocation Information -->
+            <div class="form-section visa-relocation">
+                <h2>Visa and Relocation Information</h2>
+                <div class="scrollable">
+                    <label for="visaStatus">Current Visa Status (if applicable):</label>
+                    <textarea id="visaStatus" name="visaStatus" rows="2"></textarea>
+
+                    <label for="willingnessToRelocate">Willingness to Relocate:</label>
+                    <textarea id="willingnessToRelocate" name="willingnessToRelocate" rows="2"></textarea>
+
+                    <label for="preferredRelocationRegions">Preferred Relocation Regions (if any):</label>
+                    <textarea id="preferredRelocationRegions" name="preferredRelocationRegions" rows="2"></textarea>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section additional-info">
+                <h2>Additional Information</h2>
+                <div class="scrollable">
+                    <label for="additionalInfo">Any other details that might be relevant to the migration process:</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                </div>
+            </div>
+
+           <center><button type="submit">Submit Application</button></center> 
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Footer Start -->
+<footer class="bg-light py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Migration Connect. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+
+<!-- Template JavaScript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
